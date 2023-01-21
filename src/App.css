@@ -164,13 +164,13 @@ h1 {
 .addtocart{
   margin-top: 15px;
   display:block;
-  padding:0.5em 1em 0.5em 1em;
+  padding: 5px;
   border-radius:100px;
   border:none;
   font-size:15px;
   position:relative;
-  background:#010c22;
-  color:#fff;
+  background:#ffffff;
+  color:rgb(4, 2, 29);
   cursor:pointer;
   height:30px;
   width:100%;
@@ -178,6 +178,7 @@ h1 {
   transition:transform 0.1s;
   z-index:1;
   font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
 }
 .addtocart:hover{
   transform:scale(1.1);

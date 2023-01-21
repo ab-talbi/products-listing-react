@@ -8,7 +8,8 @@ const data = [
     "keywords": "Android Small Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, small sticker sheet, android small sticker sheets, Android Sheet",
     "url": "Android+Small+Removable+Sticker+Sheet",
     "category": "accessories",
-    "subcategory": "accessories"
+    "subcategory": "accessories",
+    "quantity":"5"
   },
   {
     "id": "GGOEAFKA087599",
@@ -19,7 +20,8 @@ const data = [
     "keywords": "Android Large Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, large sticker sheet, android large sticker sheets, Android Sheet",
     "url": "Android+Large+Removable+Sticker+Sheet",
     "category": "accessories",
-    "subcategory": "accessories"
+    "subcategory": "accessories",
+    "quantity":"10"
   },
   {
     "id": "GGOEGEBK094499",
@@ -30,7 +32,8 @@ const data = [
     "keywords": "Google Bot, google bot, bots, natural bots, wood bot, google wood bot",
     "url": "Google+Bot",
     "category": "accessories",
-    "subcategory": "accessories"
+    "subcategory": "accessories",
+    "quantity":"8"
   },
   {
     "id": "GGOEGFKA086699",
