@@ -8,7 +8,7 @@ function App() {
       <div className="container">
         {
           data.map((product) => (
-            <Product product={product} image="https://random.imagecdn.app/200/300"/>
+            <Product key={product.id} product={product} image="https://random.imagecdn.app/200/300"/>
           ))
         }
       </div>
