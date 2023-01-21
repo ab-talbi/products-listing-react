@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <div className="container">
         {
-          data.map((pro) => (
-            <Product movie={pro} image="https://random.imagecdn.app/200/300"/>
+          data.map((product) => (
+            <Product product={product} image="https://random.imagecdn.app/200/300"/>
           ))
         }
       </div>
