@@ -1,17 +1,24 @@
 import React from 'react'
 
 const Product = (props) => {
+
   return (
-    <div className='movie'>
-        <div>
-            <p>{props.movie.description}</p>
+    <div className='product'>
+        <div className='description'>
+            <p>{props.product.description}</p>
         </div>
-        <div>
-            <img src={props.image} alt={props.movie.name} />
+        <div className='image'>
+            <img src={props.image} alt={props.product.name} />
         </div>
-        <div>
-            <span>{props.movie.price}</span>
-            <h3>{props.movie.name}</h3>
+        <div className='product_footer'>
+            <span>{props.product.price} MAD</span>
+            <button className='quantity'>+</button>
+            <span>1</span>
+            <button className='quantity'>-</button>
+            <h3>{props.product.name}</h3>
+
+            <button className="addtocart">ADD TO CART</button>
+
         </div>
         
     </div>
