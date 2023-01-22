@@ -73,10 +73,14 @@ h1 {
   cursor: pointer;
 }
 
+.content{
+  width: 80%;
+  margin-left: 20%;
+}
+
 .container {
   width: 100%;
   margin-top: 3rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +169,7 @@ h1 {
   margin-top: 15px;
   display:block;
   padding: 5px;
-  border-radius:100px;
+  border-radius:12px;
   border:none;
   font-size:15px;
   position:relative;
@@ -194,6 +198,44 @@ h1 {
   cursor: pointer;
   background: #061729;
 }
+
+.navbar{
+  color: white;
+  background-color: #12354d;
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #12354d;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+.navbar ul li{
+  height: 30px;
+}
+.navbar ul li button{
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #12354d;
+  cursor: pointer;
+  font-weight: 700;
+}
+.navbar ul li :hover{
+  background-color: #122231;
+  color: white;
+}
+
+.number_of_items{
+  color: #fdfdfd;
+  padding: 30px;
+}
+
+
 
 @media screen and (max-width: 600px) {
   .app {
