@@ -34,13 +34,15 @@ function App() {
           <li><button onClick={()=>{handleChoose("YouTube")}}>YouTube</button></li>
         </ul>
       </div>
-      <div>Number of items found is : {numberOfItems}</div>
-      <div className="container">
-        {
-          dataToShow.map((product) => (
-            <Product key={product.id} product={product} image="https://random.imagecdn.app/200/300"/>
-          ))
-        }
+      <div className='content'>
+        <div className='number_of_items'>Number of items found is : {numberOfItems}</div>
+        <div className="container">
+          {
+            dataToShow.map((product) => (
+              <Product key={product.id} product={product} image="https://random.imagecdn.app/200/300"/>
+            ))
+          }
+        </div>
       </div>
     </div>
   );
