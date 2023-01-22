@@ -229,6 +229,10 @@ h1 {
   background-color: #122231;
   color: white;
 }
+.clicked_item{
+  background-color: #122231;
+  color: white;
+}
 
 .number_of_items{
   color: #fdfdfd;
