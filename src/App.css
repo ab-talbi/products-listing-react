@@ -74,13 +74,13 @@ h1 {
 }
 
 .content{
-  width: 80%;
+  width: 60%;
   margin-left: 20%;
 }
 
 .container {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +197,35 @@ h1 {
   font-size: 15px;
   cursor: pointer;
   background: #061729;
+}
+
+.sidebar{
+  color: white;
+  background-color: #12354d;
+  width: 20%;
+  height: 100%;
+  margin-left: 80%;
+  margin-top: 0;
+  display: inline;
+  position: fixed;
+  overflow: auto;
+}
+.sidebar h3{
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sidebar h4{
+  margin-bottom: 0;
+  background-color: #e0e0e0;
+  padding: 10px;
+  color: #011327;
+}
+.sidebar h4:hover{
+  background-color: #011327;
+  color: #e0e0e0;
+  cursor: not-allowed;
 }
 
 .navbar{
