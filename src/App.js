@@ -54,7 +54,7 @@ function App() {
           <li><button id='2' onClick={()=>{handleChoose(2,"Google")}}>Google</button></li>
           <li><button id='3' onClick={()=>{handleChoose(3,"Waze")}}>Waze</button></li>
           <li><button id='4' onClick={()=>{handleChoose(4,"YouTube")}}>YouTube</button></li>
-          <li><button id='5' onClick={()=>{handleChoose(5,"Null")}}>Null</button></li>
+          <li><button id='5' onClick={()=>{handleChoose(5,"Acer")}}>Acer</button></li>
         </ul>
       </div>
       <div className='content'>
