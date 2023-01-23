@@ -26,7 +26,7 @@ const Product = (props) => {
             <p>{props.product.description}</p>
         </div>
         <div className='image'>
-            <img src={props.image} alt={props.product.name} />
+            <img src={props.product.image? props.product.image : props.image} alt={props.product.name} />
         </div>
         <div className='product_footer'>
             <span>{props.product.price} MAD</span>

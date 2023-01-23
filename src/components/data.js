@@ -9,7 +9,8 @@ const data = [
     "url": "Android+Small+Removable+Sticker+Sheet",
     "category": "accessories",
     "subcategory": "accessories",
-    "quantity":"5"
+    "quantity":"5",
+    "image":"https://shop.googlemerchandisestore.com/store/20160512512/assets/items/small/GGOEAFKA087599-2.jpg"
   },
   {
     "id": "GGOEAFKA087599",
@@ -21,7 +22,8 @@ const data = [
     "url": "Android+Large+Removable+Sticker+Sheet",
     "category": "accessories",
     "subcategory": "accessories",
-    "quantity":"10"
+    "quantity":"10",
+    "image":"https://ih1.redbubble.net/image.254368993.5401/st,small,507x507-pad,600x600,f8f8f8.u11.jpg"
   },
   {
     "id": "GGOEGEBK094499",
@@ -33,7 +35,8 @@ const data = [
     "url": "Google+Bot",
     "category": "accessories",
     "subcategory": "accessories",
-    "quantity":"8"
+    "quantity":"8",
+    "image":"https://shop.googlemerchandisestore.com/store/20160512512/assets/items/largeimages/GGOEGEBK094499.jpg"
   },
   {
     "id": "GGOEGFKA086699",
@@ -55,7 +58,8 @@ const data = [
     "keywords": "Waze Pack of 9 Decal Set, decals pack, packs of 9, Waze Packs, Waze Decals, waze, Waze",
     "url": "Waze+Pack+of+9+decal+set",
     "category": "accessories",
-    "subcategory": "accessories"
+    "subcategory": "accessories",
+    "image":"https://cdn-icons-png.flaticon.com/512/2111/2111754.png"
   },
   {
     "id": "GGOEGHPB071610",
@@ -231,7 +235,8 @@ const data = [
     "keywords": "Play Black Force 17oz Bottle, youtube 17 oz bottle, play back bottle, play back force bottle, 17 oz bottles, youtube black force YouTube Play Black Force Bottle YouTube Transmission Bottle Black",
     "url": "Play+Black+Force+17oz+bottle",
     "category": "drinkware",
-    "subcategory": "drinkware"
+    "subcategory": "drinkware",
+    "image":"https://cdn.glitch.com/49e4ddbf-a3b1-4b66-830d-ef19a6f81110%2Fyoutubewaterbottle.jpg?1502911447389"
   },
   {
     "id": "GGOEGAPB087899",
