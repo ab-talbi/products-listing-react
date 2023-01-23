@@ -239,6 +239,12 @@ h1 {
   padding: 30px;
 }
 
+.no_product_found{
+  color: #ff4a32;
+  font-weight: 900;
+  font-size: 50px;
+}
+
 
 
 @media screen and (max-width: 600px) {

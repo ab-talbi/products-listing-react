@@ -19,33 +19,31 @@ function App() {
       }
       setDataToShow(temporaryData);
       setNumberOfItems(temporaryData.length);
-
     }else{
       setDataToShow(data);
       setNumberOfItems(data.length);
-      setClicked([true,false,false,false,false]);
     }
 
+    //so that the button that is clicked will be colourd
     let tempBool = [false, false, false, false, false] ;
     for(let i = 0 ; i < clicked.length ; i++){
-      if( i === index){
+      if( i === index)
         tempBool[i] = true;
-      }else{
+      else
         tempBool[i] = false;
-      }
     }
     setClicked(tempBool);
   }
 
+  //when the clicked state is updated, thz button clicked will be coulourd
   useEffect( () => {
     for(let i = 0; i < clicked.length; i++){
-      if(clicked[i] === true){
+      if(clicked[i])
         document.getElementById(i).classList.add('clicked_item');
-      }else{
+      else
         document.getElementById(i).classList.remove('clicked_item');
-      }
     }
-}, [clicked]);
+  }, [clicked]);
 
   return (
     <div className="App">
@@ -56,15 +54,21 @@ function App() {
           <li><button id='2' onClick={()=>{handleChoose(2,"Google")}}>Google</button></li>
           <li><button id='3' onClick={()=>{handleChoose(3,"Waze")}}>Waze</button></li>
           <li><button id='4' onClick={()=>{handleChoose(4,"YouTube")}}>YouTube</button></li>
+          <li><button id='5' onClick={()=>{handleChoose(5,"Null")}}>Null</button></li>
         </ul>
       </div>
       <div className='content'>
         <div className='number_of_items'>Number of items found is : {numberOfItems}</div>
         <div className="container">
           {
+            dataToShow.length !== 0? 
             dataToShow.map((product) => (
-              <Product key={product.id} product={product} image="https://random.imagecdn.app/200/300"/>
-            ))
+              <Product key={product.id} product={product} image="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400.png"/>
+            )) 
+            : 
+            <div className='no_product_found'>
+              No Product Found
+            </div>
           }
         </div>
       </div>
