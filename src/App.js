@@ -4,8 +4,10 @@ import data from './components/data';
 import { useState, useEffect } from 'react';
 
 function App() {
+  let id = 0;
   const [dataToShow, setDataToShow] = useState(data);
   const [numberOfItems, setNumberOfItems] = useState(data.length);
+  const [addedList, setAddedList] = useState([]);
   const temporaryData = [];
 
   const [clicked, setClicked] = useState([true,false,false,false,false]);
@@ -57,13 +59,21 @@ function App() {
           <li><button id='5' onClick={()=>{handleChoose(5,"Acer")}}>Acer</button></li>
         </ul>
       </div>
+      <div className='sidebar'>
+        <h3>Products added</h3>
+        {
+          addedList.map((product) => (
+            <h4 key={id++}>{product}</h4>
+          )) 
+        }
+      </div>
       <div className='content'>
         <div className='number_of_items'>Number of items found is : {numberOfItems}</div>
         <div className="container">
           {
             dataToShow.length !== 0? 
             dataToShow.map((product) => (
-              <Product key={product.id} product={product} image="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400.png"/>
+              <Product addedList={addedList} setAddedList={setAddedList} key={product.id} product={product} image="https://www.pacificfoodmachinery.com.au/media/catalog/product/placeholder/default/no-product-image-400x400.png"/>
             )) 
             : 
             <div className='no_product_found'>

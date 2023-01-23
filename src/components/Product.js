@@ -20,6 +20,10 @@ const Product = (props) => {
       setCount(count - 1);
   }
 
+  const handleAddToCart = (item) => {
+    props.setAddedList(state => [...state, item])
+  }
+
   return (
     <div className='product'>
         <div className='description'>
@@ -36,7 +40,7 @@ const Product = (props) => {
             <span>{props.product.price * count} MAD</span>
             <h3>{props.product.name}</h3>
 
-            <button className="addtocart">ADD TO CART</button>
+            <button className="addtocart" onClick={()=>{handleAddToCart(props.product.name)}}>ADD TO CART</button>
 
         </div>
         
