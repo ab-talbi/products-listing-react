@@ -33,6 +33,7 @@ const Product = (props) => {
             <button className='quantity' onClick={()=>{handleCountPlus()}}>+</button>
             <span>{count}</span>
             <button className='quantity' onClick={()=>{handleCountMoins()}}>-</button>
+            <span>{props.product.price * count} MAD</span>
             <h3>{props.product.name}</h3>
 
             <button className="addtocart">ADD TO CART</button>
