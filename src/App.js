@@ -4,7 +4,6 @@ import data from './components/data';
 import { useState, useEffect } from 'react';
 
 function App() {
-  let id = 0;
   const [dataToShow, setDataToShow] = useState(data);
   const [numberOfItems, setNumberOfItems] = useState(data.length);
   const [addedList, setAddedList] = useState([]);
@@ -63,7 +62,7 @@ function App() {
         <h3>Products added</h3>
         {
           addedList.map((product) => (
-            <h4 key={id++}>{product}</h4>
+            <h4 key={product.id}>{product.name}</h4>
           )) 
         }
       </div>

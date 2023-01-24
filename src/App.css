@@ -188,6 +188,29 @@ h1 {
   transform:scale(1.1);
 }
 
+.added{
+  margin-top: 15px;
+  display:block;
+  padding: 5px;
+  border-radius:12px;
+  border:none;
+  font-size:15px;
+  position:relative;
+  background:rgb(54, 11, 11);
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+  height:30px;
+  width:100%;
+  overflow:hidden;
+  transition:transform 0.1s;
+  z-index:1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+}
+.addtocart:hover{
+  transform:scale(1.1);
+}
+
 .quantity{
   margin-left: 15px;
   margin-right: 15px;
