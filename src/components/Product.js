@@ -21,7 +21,20 @@ const Product = (props) => {
   }
 
   const handleAddToCart = (item) => {
-    props.setAddedList(state => [...state, item])
+    let exist = false;
+    for(let i = 0 ; i < props.addedList.length ; i++){
+      if(props.addedList[i].id === item.id){
+        exist = true;
+        break;
+      }
+    }
+    if(!exist){
+      props.setAddedList(state => [...state, item])
+
+      document.querySelector('#'+props.product.id).classList.add('added');
+      document.querySelector('#'+props.product.id).classList.remove('addtocart');
+      document.querySelector('#'+props.product.id).innerHTML = 'Added';
+    }
   }
 
   return (
@@ -40,8 +53,7 @@ const Product = (props) => {
             <span>{props.product.price * count} MAD</span>
             <h3>{props.product.name}</h3>
 
-            <button className="addtocart" onClick={()=>{handleAddToCart(props.product.name)}}>ADD TO CART</button>
-
+            <button id={props.product.id} className="button_add addtocart" onClick={()=>{handleAddToCart(props.product)}}>ADD TO CART</button>
         </div>
         
     </div>
