@@ -46,6 +46,16 @@ function App() {
     }
   }, [clicked]);
 
+  const handleDeleteProductAdded = (id) =>{
+    setAddedList((current) =>
+      current.filter((product) => product.id !== id)
+    );
+
+    document.querySelector('#'+id).classList.add('addtocart');
+    document.querySelector('#'+id).classList.remove('added');
+    document.querySelector('#'+id).innerHTML = 'Add To Cart';
+  }
+
   return (
     <div className="App">
       <div className='navbar'>
@@ -62,7 +72,7 @@ function App() {
         <h3>Products added</h3>
         {
           addedList.map((product) => (
-            <h4 key={product.id}>{product.name}</h4>
+            <button key={product.id} onClick={()=>{handleDeleteProductAdded(product.id)}}>{product.name}</button>
           )) 
         }
       </div>

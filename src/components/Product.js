@@ -34,6 +34,14 @@ const Product = (props) => {
       document.querySelector('#'+props.product.id).classList.add('added');
       document.querySelector('#'+props.product.id).classList.remove('addtocart');
       document.querySelector('#'+props.product.id).innerHTML = 'Added';
+    }else{
+      props.setAddedList((current) =>
+        current.filter((product) => product.id !== props.product.id)
+      );
+
+      document.querySelector('#'+props.product.id).classList.add('addtocart');
+      document.querySelector('#'+props.product.id).classList.remove('added');
+      document.querySelector('#'+props.product.id).innerHTML = 'Add To Cart';
     }
   }
 

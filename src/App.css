@@ -239,13 +239,14 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.sidebar h4{
+.sidebar button{
   margin-bottom: 0;
   background-color: #e0e0e0;
   padding: 10px;
   color: #011327;
+  width: 100%;
 }
-.sidebar h4:hover{
+.sidebar button:hover{
   background-color: #011327;
   color: #e0e0e0;
   cursor: not-allowed;
