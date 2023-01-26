@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
 function App() {
+  
   const [dataToShow, setDataToShow] = useState(data);
   const [numberOfItems, setNumberOfItems] = useState(data.length);
   const [addedList, setAddedList] = useState([]);
@@ -13,11 +14,8 @@ function App() {
   return (
     <div className="App">
       <Navbar dataToShow={dataToShow} setDataToShow={setDataToShow} numberOfItems={numberOfItems} setNumberOfItems={setNumberOfItems} />
-
       <Sidebar addedList={addedList} setAddedList={setAddedList}/>
-      
       <Content numberOfItems={numberOfItems} setNumberOfItems={setNumberOfItems} dataToShow={dataToShow} setDataToShow={setDataToShow} addedList={addedList} setAddedList={setAddedList} />
-    
     </div>
   );
 }

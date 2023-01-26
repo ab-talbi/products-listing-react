@@ -12,7 +12,6 @@ const Product = (props) => {
     }else{
       setCount(count + 1);
     }
-    
   }
 
   const handleCountMoins = () => {
@@ -49,7 +48,7 @@ const Product = (props) => {
         productElement.classList.remove('added');
         productElement.innerHTML = 'Add To Cart';
       }
-      
+
     }
   }
 
@@ -71,7 +70,6 @@ const Product = (props) => {
 
             <button id={props.product.id} className="button_add addtocart" onClick={()=>{handleAddToCart(props.product)}}>ADD TO CART</button>
         </div>
-        
     </div>
   )
 }
