@@ -28,20 +28,28 @@ const Product = (props) => {
         break;
       }
     }
+
+    let productElement = document.querySelector('#'+props.product.id);
     if(!exist){
       props.setAddedList(state => [...state, item])
 
-      document.querySelector('#'+props.product.id).classList.add('added');
-      document.querySelector('#'+props.product.id).classList.remove('addtocart');
-      document.querySelector('#'+props.product.id).innerHTML = 'Added';
+      if(productElement !== null){
+        productElement.classList.add('added');
+        productElement.classList.remove('addtocart');
+        productElement.innerHTML = 'Added';
+      }
+      
     }else{
       props.setAddedList((current) =>
         current.filter((product) => product.id !== props.product.id)
       );
 
-      document.querySelector('#'+props.product.id).classList.add('addtocart');
-      document.querySelector('#'+props.product.id).classList.remove('added');
-      document.querySelector('#'+props.product.id).innerHTML = 'Add To Cart';
+      if(productElement !== null){
+        productElement.classList.add('addtocart');
+        productElement.classList.remove('added');
+        productElement.innerHTML = 'Add To Cart';
+      }
+      
     }
   }
 
